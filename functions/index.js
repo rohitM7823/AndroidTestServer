@@ -23,7 +23,7 @@ var product = {
 function getProducts(len) {
     var products = [];
     for(let i = 0; i < len; i++) {
-        product.push(product);
+        products.push(product);
     }
     return products;
 }
@@ -31,7 +31,7 @@ function getProducts(len) {
 router.get("/", (req, res) => {
     res.json(
         {
-            "product": getProducts(10)
+            "product": product
         }
     );    
 });
