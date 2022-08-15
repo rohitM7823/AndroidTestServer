@@ -20,17 +20,28 @@ var product = {
     image: "https://i.pravatar.cc/300"
 };
 
+function getProducts(len) {
+    var products = [];
+    for(let i = 0; i < len; i++) {
+        product.push(product);
+    }
+    return products;
+}
 
 router.get("/", (req, res) => {
     res.json(
         {
-            "product": product
+            "product": getProducts(10)
         }
     );    
 });
 
 router.get("products/catalog", (req,res) => {
-
+    res.json(
+        {
+            "products": getProducts(10)
+        }
+    );
 });
 
 
