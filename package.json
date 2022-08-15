@@ -1,0 +1,22 @@
+{
+  "name": "androidtestserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "node functions/index.js"
+  },
+  "author": "rohit manna",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "express": "^4.18.1",
+    "express.js": "^1.0.0",
+    "netlify": "^12.0.0",
+    "netlify-cli": "^10.13.0",
+    "serverless-http": "^3.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
