@@ -23,7 +23,7 @@ var product = {
 function getProducts(len) {
     var products = [];
     for(let i = 0; i < len; i++) {
-        products.push(product);
+        products.push({name:randomName(len), image:product.image});
     }
     return products;
 }
@@ -36,7 +36,7 @@ router.get("/", (req, res) => {
     );    
 });
 
-router.get("products/catalog", (req,res) => {
+router.get("/products", (req,res) => {
     res.json(
         {
             "products": getProducts(10)
